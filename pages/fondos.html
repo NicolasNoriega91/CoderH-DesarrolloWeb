@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del sitio</title>
+
+    <!--Framework-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!--Font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Plus&family=REM:wght@200;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header> 
+        <nav class="navbar navbar-expand-lg nav-bg-color">
+            <div class="container-fluid ">
+                <a class="navbar-brand nav-tittle" href="../index.html">InterMarket</a>
+                <section>
+                    <div class="collapse navbar-collapse " id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="../pages/fondos.html">Fondos de inversión</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="../pages/mercado.html">Mercado de valores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="../pages/dolarmep.html">Dolar MEP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="../pages/nosotros.html">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </nav>
+    </header>
+
+    <div>
+        <img class="portada-img-contacto" src="/images/fondos comunes de inversion/portada.jpg" alt="portada-pagina" >
+        <h1 class="h1 portada-titulo-fondos">Fondos comunes de inversión</h1>
+    </div>
+
+    <main>
+        <section class="main-bg-blue">
+            <h2>¿Que es un fondo común de inversión?</h2><br>
+            <p>
+                Los Fondos comunes de inversión son paquetes de inversiones diseñados y administrados por expertos, para invertir tus ahorros de forma sencilla. Podés suscribir a uno o varios fondos, que varían según su perfil potencial de ganancia/riesgo y si son de renta fija o variable.
+            </p>
+        </section>
+        <section class="main-bg-white main-container-flex">
+            <div>
+                <h2>¿Cuáles son nuestros fondos comunes de inversión?</h2><br>
+                <p>
+                    Disponemos de varios fondos comunes de inversión de nuestro socio comercial el grupo SBS Fondos. Cada uno acorde a tu perfil de inversor, conservador, moderado y agresivo.
+                </p>
+            </div>
+            <a href="https://www.sbsfondos.com/" target="_blank">
+                <img class="main-img-sbs" src="../images/fondos comunes de inversion/sbs-logo.svg" alt="">
+            </a>
+        </section>
+        <section class="main-bg-white">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <section class="main-carousel-container">
+                            <img src="../images/fondos comunes de inversion/sbs-gestion-renta-fija-fci.png" class="d-block w-100 main-img-fci" alt="...">
+                            <section class="main-carousel-text">
+                                <h5 class="main-carousel-tittle">SBS GESTIÓN RENTA FIJA FCI</h5><br>
+                                <p>
+                                    El fondo está orientado a personas que deseen obtener una renta en Pesos. Las características en la composición de la cartera del fondo buscan asumir una volatilidad conservadora y un perfil de riesgo del tipo conservador.
+                                </p>
+                                <a href="../pages/contacto.html">
+                                    <button type="button" class="btn btn-primary btn-lg">Comenzar</button>
+                                </a>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <section class="main-carousel-container">
+                            <img src="../images/fondos comunes de inversion/sbs-retorno-total-fci.png" class="d-block w-100 main-img-fci" alt="...">
+                            <section class="main-carousel-text">
+                                <h5 class="main-carousel-tittle">SBS RETORNO TOTAL FCI</h5><br>
+                                <p>
+                                    El fondo está orientado a personas con un perfil de riesgo moderado que deseen obtener una renta en Dólares medida en Pesos. Las características en la composición de la cartera del fondo buscan asumir una volatilidad moderada aprovechando las oportunidades de inversión en activos de renta fija.
+                                </p>
+                                <a href="../pages/contacto.html">
+                                    <button type="button" class="btn btn-primary btn-lg">Comenzar</button>
+                                </a>
+                            </section>
+                        </section>
+                    </div>
+                    <div class="carousel-item">
+                        <section class="main-carousel-container">
+                            <img src="../images/fondos comunes de inversion/sbs-acciones-argentina-fci.png" class="d-block w-100 main-img-fci" alt="...">
+                            <section class="main-carousel-text">
+                                <h5 class="main-carousel-tittle">SBS ACCIONES ARGENTINA FCI</h5><br>
+                                <p>
+                                    El fondo está orientado a personas con un perfil de riesgo agresivo que busquen obtener retornos en Pesos superiores al índice S&P Merval. Las características en la composición de la cartera del fondo buscan asumir una volatilidad elevada aprovechando las oportunidades de inversión en instrumentos de renta variable.
+                                </p>
+                                <a href="../pages/contacto.html">
+                                    <button type="button" class="btn btn-primary btn-lg">Comenzar</button>
+                                </a>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+              </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <section class="footer-container">
+            <div>
+                <h3>InterMarket</h3>
+                <p>
+                    Av. de Mayo 1026<br>
+                    CABA, Buenos Aires, Argentina.<br>
+                    consultas-intermarket@yopmail.com<br>
+                    (+54) 911 6633-9988
+                </p>
+            </div>
+            <div>
+                <h3>Inversiones</h3>
+                <p>
+                    <a class="nav-link" href="pages/fondos.html">Fondos de inversión</a>
+                    <a class="nav-link" href="pages/mercado.html">Mercado de valores</a>
+                    <a class="nav-link" href="pages/dolarmep.html">Dolar MEP</a>
+                </p>
+            </div>
+            <div>
+                <h3>Empresa</h3>
+                <p>
+                    <a class="nav-link" href="../pages/nosotros.html">Sobre nosotros</a>
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </p>
+                    <ul>
+                        <section class="footer-container-socialmedia">
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <img src="icons/Index/footer_Instagram.svg" alt="">
+                                </a>                    
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <img src="icons/Index/footer_Facebook.svg" alt="">
+                                </a>                    
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/" target="_blank">
+                                    <img src="icons/Index/footer_Twitter.svg" alt="">
+                                </a>                    
+                            </li>
+                        </section>
+                    </ul>
+            </div>
+            <div class="footer-container">
+                <ul>
+                    <li>
+                        <a href="" target="_blank">
+                            <img class="footer_img" src="../images/index/footer_cnv.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img class="footer_img" src="../images/index/footer_cadab.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="" target="_blank">
+                            <img class="footer_img" src="../images/index/footer_byma.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img class="footer_img" src="../images/index/footer_merval.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <p class="footer-text">© 2023 - InterMarket SA (Nicolas Ariel Noriega)</p>
+    </footer>
+
+    <!--Scrip BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
