@@ -139,9 +139,8 @@
 }
 
 .main-contacto-form-button{
+    display: flex;
     align-items: center;
-    align-content: center;
-    justify-self: center;
 }
 
 .main-mercado-bg-00{
@@ -179,6 +178,48 @@
     padding: 7%;
 }
 
+.main-dolar-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: #3D8AFF;
+    text-align: center;
+    font-size: 170%;
+    padding: 9%;
+}
+
+.main-dolar-img{
+    align-self: center;
+    width: 75%;
+    height: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.main-dolar-container-vd{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.main-dolar-container-text{
+    color: black;
+}
+
+.main-dolar-container-c{
+    background-color: #f4f4f4;
+    color: #3D8AFF;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 12%;
+    padding-left: 12%;
+    font-size: 175%;
+}
+
+.main-nosotros{
+    background-color: #f4f4f4;
+    font-size: 150%;
+}
 
 /*---FOOTER---*/
 
