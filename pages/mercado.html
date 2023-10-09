@@ -10,6 +10,8 @@
     <!--Framework-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--CSS-->
     <link rel="stylesheet" href="../styles/style.css">
@@ -22,25 +24,24 @@
 </head>
 
 <body>
-
     <header> 
-        <nav class="navbar navbar-expand-lg nav-bg-color">
+        <nav class="navbar navbar-expand-lg nav-bar">
             <div class="container-fluid ">
-                <a class="navbar-brand nav-tittle" href="../index.html">InterMarket</a>
+                <a class="navbar-brand" href="../index.html">InterMarket</a>
                 <section>
                     <div class="collapse navbar-collapse " id="navbarText">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/fondos.html">Fondos de inversión</a>
+                                <a class="nav-link" href="../pages/fondos.html">Fondos de inversión</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/mercado.html">Mercado de valores</a>
+                                <a class="nav-link" href="../pages/mercado.html">Mercado de valores</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/dolarmep.html">Dolar MEP</a>
+                                <a class="nav-link" href="../pages/dolarmep.html">Dolar MEP</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/contacto.html">Contacto</a>
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -49,63 +50,71 @@
         </nav>
     </header>
 
-    <div>
-        <img class="portada-img-contacto" src="../images/Marcado de valores/portada.jpeg" alt="portada-pagina" >
-        <h1 class="h1 portada-titulo-contacto">Mercado de valores</h1>
+    <div id="portada-mercado">
+        <img src="../images/Marcado de valores/portada.jpeg" alt="portada-pagina" >
+        <h1 class="h1">Mercado de valores</h1>
     </div>
 
     <main>
-        <section class="main-container-flex main-mercado-bg-00">
-            <div class="main-mercado-texto">
-                <h2 class="main-mercado-tittle main-carousel-tittle">Cedears</h2><br>
+        <section id="cedears">
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <h2>Cedears</h2><br>
                 <p>
                     Los Cedears (Certificado de deposito argentino) son activos o títulos que cotizan en el mercado argentino, y que representan acciones o ETF del extranjero. En otras palabras, son instrumentos del mercado financiero que operan en la bolsa local y que equivalen a una fracción de un activo que cotiza en el extranjero, en dólares.<br>
                     De esta forma, los Cedears actúan como una acción de grandes compañías. Al contar con uno de estos certificados tenés los mismos derechos y obligaciones que cualquier dueño de acciones.<br>
                     La gran ventaja de los Cedears es que tienen una doble cotización: los podés comprar en pesos y vender en dólares. Particularmente, están atados al tipo de cambio del dólar CCL. Así, el valor sube cuando el peso se devalúa.
                 </p>
             </div>
-            <section class="main-mercado-centrado">
-                <iframe class="main-mercado-video" src="https://www.youtube.com/embed/PSnKhXJIqWc?si=eEu3SaJjf6rp-wZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <section>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <iframe  src="https://www.youtube.com/embed/PSnKhXJIqWc?si=eEu3SaJjf6rp-wZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </section>
         </section>
-        <section class="main-container-flex main-mercado-bg-01">
-            <section class="main-mercado-centrado">
-                <iframe class="main-mercado-video" src="https://www.youtube.com/embed/Y2z1WNupYKI?si=JgQG-7g01_E_-azW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <section id="bonos">
+            <section>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <iframe src="https://www.youtube.com/embed/Y2z1WNupYKI?si=JgQG-7g01_E_-azW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </section>            
-            <div class="main-mercado-texto">
-                <h2 class="main-mercado-tittle main-carousel-tittle">Bonos y Obligaciones Negociables</h2><br>
+            <div data-aos="fade-left" data-aos-duration="1500">
+                <h2>Bonos y Obligaciones Negociables</h2><br>
                 <p>
                     Mientras los títulos de deuda pública son emitidos por un Gobierno u organismo público, la renta fija privada representa deudas de empresas privadas, por lo que su riesgo y rentabilidad dependerán de la calidad de la empresa<br>
                     Los bonos y obligaciones son títulos que representan una parte de una deuda, a favor de su tenedor, y emitida por una entidad para la financiación de un proyecto. Los títulos de renta fija privada son emitidos por empresas privadas. Su rentabilidad y riesgo previstos tienen que ver con la calificación crediticia del emisor y también con el plazo de reembolso y los tipos de interés.
                 </p>
             </div>
         </section>
-        <section class="main-container-flex main-mercado-bg-00">
-            <div class="main-mercado-texto">
-                <h2 class="main-mercado-tittle main-carousel-tittle">Acciones</h2><br>
+        <section id="acciones">
+            <div data-aos="fade-right" data-aos-duration="1500">
+                <h2>Acciones</h2><br>
                 <p>
                     Una acción representa una porción del capital social de una empresa convirtiendo al inversor que la adquiere en accionista de la misma. Es para inversores agresivos o con experiencia, ya que está sujeta a una volatilidad media a alta dependiendo de diversos factores. Es uno de los instrumentos de inversión a largo plazo más conocidos del mercado, también se lo conoce como Renta Variable.<br>
                     Para acceder a acciones de una empresa es imprescindible que se encuentre en la Oferta Pública y esté autorizada para ser listada. En Argentina las acciones se negocian en la Bolsa de Comercio de Buenos Aires. Las principales acciones argentinas integran el índice S&P MERVAL.<br>
                     El Precio al que se negocian es el resultado de la oferta y la demanda, dada por el volumen a operar. A mayor cantidad de compradores, sube el precio, mientras que a mayor cantidad de vendedores, baja el precio.
                 </p>
             </div>
-            <section class="main-mercado-centrado">
-                <iframe class="main-mercado-video" src="https://www.youtube.com/embed/dG73wWHAWr4?si=fDAd0EmVV0x3_R_d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <section>
+                <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <iframe src="https://www.youtube.com/embed/dG73wWHAWr4?si=fDAd0EmVV0x3_R_d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>    
             </section>
         </section>
-        <section class="main-mercado-tittle main-mercado-bg-01 main-mercado-texto-01">
+        <section id="main-mercado-contacto">
             <p>
                 Operá todos los instrumentos en la plataforma transaccional más completa del mercado.<br>
                 Envianos tu solicitud para que un asesor se contacte.
             </p><br>
-            <a href="../pages/contacto.html">
-                <button class="btn btn-primary btn-lg main-contacto-form-button" type="submit">Comenzar</button>
-            </a>
+            <div data-aos="zoom-in">
+                <a href="../pages/contacto.html">
+                    <button class="btn btn-primary btn-lg" type="submit">Comenzar</button>
+                </a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <section class="footer-container">
+        <section id="footer-container">
             <div>
                 <h3>InterMarket</h3>
                 <p>
@@ -129,7 +138,7 @@
                     <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                 </p>
                     <ul>
-                        <section class="footer-container-socialmedia">
+                        <section id="footer-socialmedia">
                             <li>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <img src="../icons/Index/footer_Instagram.svg" alt="">
@@ -148,34 +157,34 @@
                         </section>
                     </ul>
             </div>
-            <div class="footer-container">
+            <div id="footer-img">
                 <ul>
                     <li>
                         <a href="https://www.argentina.gob.ar/cnv" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_cnv.png" alt="">
+                            <img src="../images/index/footer_cnv.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="http://www.cadab.org.ar/home.php?v=1" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_cadab.png" alt="">
+                            <img src="../images/index/footer_cadab.png" alt="">
                         </a>
                     </li>
                 </ul>
                 <ul>
                     <li>
                         <a href="https://www.byma.com.ar/" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_byma.png" alt="">
+                            <img src="../images/index/footer_byma.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.mav-sa.com.ar/" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_merval.png" alt="">
+                            <img src="../images/index/footer_merval.png" alt="">
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
-        <p class="footer-text">© 2023 - InterMarket SA (Nicolas Ariel Noriega)</p>
+        <p>© 2023 - InterMarket SA (Nicolas Ariel Noriega)</p>
     </footer>
 
     <!--Scrip BOOTSTRAP-->
@@ -184,6 +193,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
+    <!--Scrip AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

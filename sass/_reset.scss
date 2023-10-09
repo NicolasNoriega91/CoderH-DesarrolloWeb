@@ -1,0 +1,86 @@
+/*--VARIABLES--*/
+
+$color_text: #3D8AFF;
+$bgcolor_blue: #064F92;
+$bgcolor_grey: #e8e8e8;
+
+
+/*---ANIMACIONES---*/
+
+@keyframes desvanecer {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes cambio_color{
+
+    from{
+        color: $bgcolor_blue;
+    }
+
+    to{
+        color: white;
+    }
+}
+
+
+/*--MIXINS--*/
+
+@mixin color-bgcolor($color,$bgcolor){
+    color: $color;
+    background-color: $bgcolor;
+}
+
+@mixin portada($vposition,$vtop,$vleft,$vsize,$vtransform){
+    position: $vposition;
+    top: $vtop;
+    left: $vleft;
+    font-size: $vsize;
+    transform: $vtransform;
+}
+
+@mixin img-size($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin display_justify($display,$justify){
+    display: $display;
+    justify-content: $justify;
+}
+
+@mixin title-size($f_size,$f_weight){
+    font-size: $f_size;
+    font-weight: $f_weight;
+}
+
+@mixin desvanecer($timing_func,$duration){
+    animation-name: desvanecer;
+    animation-timing-function: $timing_func;
+    animation-duration: $duration;
+}
+
+@mixin cambio_color($timing_func,$duration,$iteration){
+    animation-name: cambio_color;
+    animation-iteration-count: $iteration;
+    animation-timing-function: $timing_func;
+    animation-duration: $duration;
+}
+
+/*----------*/
+
+* {
+    font-family: 'Gentium Plus', serif;
+    font-family: 'REM', sans-serif;
+    list-style-type: none;
+}
+

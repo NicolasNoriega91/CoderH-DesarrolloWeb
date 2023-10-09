@@ -10,6 +10,8 @@
     <!--Framework-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!--CSS-->
     <link rel="stylesheet" href="../styles/style.css">
@@ -24,23 +26,23 @@
 <body>
 
     <header> 
-        <nav class="navbar navbar-expand-lg nav-bg-color">
+        <nav class="navbar navbar-expand-lg nav-bar">
             <div class="container-fluid ">
-                <a class="navbar-brand nav-tittle" href="../index.html">InterMarket</a>
+                <a class="navbar-brand" href="../index.html">InterMarket</a>
                 <section>
                     <div class="collapse navbar-collapse " id="navbarText">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/fondos.html">Fondos de inversión</a>
+                                <a class="nav-link" href="../pages/fondos.html">Fondos de inversión</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/mercado.html">Mercado de valores</a>
+                                <a class="nav-link" href="../pages/mercado.html">Mercado de valores</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/dolarmep.html">Dolar MEP</a>
+                                <a class="nav-link" href="../pages/dolarmep.html">Dolar MEP</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav-text" href="../pages/contacto.html">Contacto</a>
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -49,14 +51,14 @@
         </nav>
     </header>
 
-    <div>
-        <img class="portada-img-contacto" src="../images/Contacto/portada.jpg" alt="portada-pagina" >
-        <h1 class="h1 portada-titulo-contacto">Contacto</h1>
+    <div id="portada-contacto">
+        <img src="../images/Contacto/portada.jpg" alt="portada-pagina" >
+        <h1 class="h1">Contacto</h1>
     </div>
 
     <main>
-        <div class="main-contacto-form">
-            <section class="mb-5 main-card-text">
+        <div id="contacto-form">
+            <section class="mb-5">
                 <h2>¡Envianos tu consulta!</h2>
                 <p>
                     Un asesor te contactará a la brevedad para brindarte la mejor experiencia de inversión.
@@ -94,14 +96,16 @@
                     <label for="floatingTextarea">Comentarios</label>
                 </div>
             </section>
-            <section class="main-contacto-form-button">
-                <button class="btn btn-primary btn-lg " type="submit">Enviar</button>
+            <section id="container-form-button">
+                <div data-aos="zoom-in">
+                    <button class="btn btn-primary btn-lg " type="submit">Enviar</button>
+                </div>
             </section>
         </div>
     </main>
 
     <footer>
-        <section class="footer-container">
+        <section id="footer-container">
             <div>
                 <h3>InterMarket</h3>
                 <p>
@@ -125,7 +129,7 @@
                     <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                 </p>
                     <ul>
-                        <section class="footer-container-socialmedia">
+                        <section id="footer-socialmedia">
                             <li>
                                 <a href="https://www.instagram.com/" target="_blank">
                                     <img src="../icons/Index/footer_Instagram.svg" alt="">
@@ -144,34 +148,34 @@
                         </section>
                     </ul>
             </div>
-            <div class="footer-container">
+            <div id="footer-img">
                 <ul>
                     <li>
                         <a href="https://www.argentina.gob.ar/cnv" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_cnv.png" alt="">
+                            <img src="../images/index/footer_cnv.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="http://www.cadab.org.ar/home.php?v=1" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_cadab.png" alt="">
+                            <img src="../images/index/footer_cadab.png" alt="">
                         </a>
                     </li>
                 </ul>
                 <ul>
                     <li>
                         <a href="https://www.byma.com.ar/" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_byma.png" alt="">
+                            <img src="../images/index/footer_byma.png" alt="">
                         </a>
                     </li>
                     <li>
                         <a href="https://www.mav-sa.com.ar/" target="_blank">
-                            <img class="footer_img" src="../images/index/footer_merval.png" alt="">
+                            <img src="../images/index/footer_merval.png" alt="">
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
-        <p class="footer-text">© 2023 - InterMarket SA (Nicolas Ariel Noriega)</p>
+        <p>© 2023 - InterMarket SA (Nicolas Ariel Noriega)</p>
     </footer>
 
     <!--Scrip BOOTSTRAP-->
@@ -180,6 +184,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
+    <!--Scrip AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+/*--PORTADA--*/
+
+#portada-contacto{
+    color: white;
+    img{
+        @include img-size(100%,650px);
+    }
+    h1{
+        @include portada(absolute, 50%, 18%, 400%, translate(-50%,-50%));
+        @include desvanecer(ease-in,2s);
+    }
+}
+
+
+/*--MAIN--*/
+
+#contacto-form{
+    padding: 4%;
+    padding-left: 15%;
+    padding-right: 15%;
+    .mb-5{
+        color: $color_text;
+        text-align: center;
+        font-size: 120%;
+    }
+    #container-form-button{
+        padding-left: 45%;      
+    }
+}

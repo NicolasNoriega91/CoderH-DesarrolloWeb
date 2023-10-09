@@ -1,0 +1,30 @@
+/*---FOOTER---*/
+
+footer{
+    @include color-bgcolor(white,$bgcolor_blue);
+    #footer-container{
+        @include display_justify(flex,space-around);
+        padding-top: 15px;
+        #footer-img{
+            @include display_justify(flex,space-around);
+            img{
+                border-radius: 10px
+            }
+        }
+        #footer-socialmedia{
+            @include display_justify(flex,space-around);
+        }
+        p{
+            text-align: left;
+            padding-left: 0px;
+            padding-bottom: 0px;
+        }
+        a:hover{
+            @include desvanecer(ease-in,1s);
+        }
+    }
+    p{
+        text-align: center;
+        padding: 15px; 
+    }
+}

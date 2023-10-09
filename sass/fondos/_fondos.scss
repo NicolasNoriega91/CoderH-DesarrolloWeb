@@ -1,0 +1,53 @@
+/*--PORTADA--*/
+
+#portada-fondos{
+    color: white;
+    img{
+        @include img-size(100%,650px);
+    }
+    h1{
+        @include portada(absolute,50%,30%,400%,translate(-50%,-50%));
+        @include desvanecer(ease-in,2s);
+    }
+}
+
+
+/*--MAIN--*/
+
+
+#main-section-1{
+    @include color-bgcolor(white,$bgcolor_blue);
+    text-align: center;
+    padding: 5%;
+}
+#main-section-2{
+    @include color-bgcolor($color_text,white);
+    @include display_justify(flex,space-between);
+    padding: 5%;
+    div{
+        padding-right: 15%;
+    }
+    img{
+        width: 100%;
+        align-content: center;
+    }
+}
+#section-carrousel{
+    section{
+        @include color-bgcolor($color_text,$bgcolor_grey);
+        display: flex;
+        align-items: center;
+        img{
+            max-width: 600px;
+        }
+        section{
+            display: block;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: center;
+            h5{
+                @include title-size(150%,700);
+            }
+        }
+    }
+}

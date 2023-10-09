@@ -1,0 +1,57 @@
+/*--PORTADA--*/
+
+#portada-mercado{
+    color: white;
+    img{
+        @include img-size(100%,690px);
+    }
+    h1{
+        @include portada(absolute,50%,25%,400%,translate(-50%,-50%));
+        @include desvanecer(ease-in,2s);
+    }
+}
+
+
+/*--MAIN--*/
+
+#cedears{
+    @include color-bgcolor(white,$bgcolor_blue);
+    @include display_justify(flex,space-between);
+    padding: 5%;
+    div{
+        font-size: 120%;
+        width: 50%;
+        h2{
+            @include title-size(150%,700);
+            text-align: center;
+        }
+    }
+    section{
+        align-self: center;
+        iframe{
+            @include img-size(560px,315px);
+            border-radius: 10px;
+        }
+    }
+
+}
+
+#bonos{
+    @extend #cedears;
+    @include color-bgcolor($color_text,white);
+}
+
+#acciones{
+    @extend #cedears;
+    @include color-bgcolor(white,$bgcolor_blue);
+}
+
+#main-mercado-contacto{
+    @include color-bgcolor($color_text,white);
+    @include title-size(185%,650);
+    text-align: center;
+    padding: 7%;
+    
+
+}
+
