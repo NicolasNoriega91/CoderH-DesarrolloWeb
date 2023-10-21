@@ -40,11 +40,12 @@ $bgcolor_grey: #e8e8e8;
     background-color: $bgcolor;
 }
 
-@mixin portada($vposition,$vtop,$vleft,$vsize,$vtransform){
+@mixin portada($vposition,$vtop,$vleft,$vsize,$v_weight,$vtransform){
     position: $vposition;
     top: $vtop;
     left: $vleft;
     font-size: $vsize;
+    font-weight: $v_weight;
     transform: $vtransform;
 }
 

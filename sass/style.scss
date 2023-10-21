@@ -12,17 +12,18 @@
 
 /*---PORTADA---*/
 
+
 #portada{
     color: white;
     img{
         @include img-size(100%,700px);
     }
-    h1{
-        @include portada(absolute, 35%, 50%, 400%, translate(-50%,-50%));
+    h1{ 
+        @include portada(absolute, 35%, 50%, 400%, 600, translate(-50%,-50%));
         @include cambio_color(ease-in,5s,initial);
     }
     p{
-        @include portada(absolute, 52%, 52.5%, 190%, translate(-55%,-55%));
+        @include portada(absolute, 52%, 52.5%, 190%, 500, translate(-55%,-55%));
         @include cambio_color(ease-in,5s,initial);
         text-align: center;
     }
@@ -49,3 +50,17 @@ main{
     }
 }
 
+/*-- MOVILE L | 425px --*/ 
+@media only screen and (max-width: 425px){
+    #portada{
+        img{
+            @include img-size(100vh,125vw);
+        }
+        h1{
+            @include portada(absolute, 25%, 50%, 210%, 600, translate(-50%,-50%));
+        }
+        p{
+            @include portada(absolute, 55%, 52.5%, 120%, 500, translate(-55%,-55%));
+        }
+    }
+}

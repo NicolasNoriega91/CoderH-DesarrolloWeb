@@ -6,7 +6,7 @@
         @include img-size(100%,650px);
     }
     h1{
-        @include portada(absolute, 50%, 18%, 400%, translate(-50%,-50%));
+        @include portada(absolute, 50%, 18%, 400%, 600, translate(-50%,-50%));
         @include desvanecer(ease-in,2s);
     }
 }
@@ -25,5 +25,27 @@
     }
     #container-form-button{
         padding-left: 45%;      
+    }
+}
+
+/*-- MOVILE L | 425px --*/ 
+@media only screen and (max-width: 425px){
+
+    /*--PORTADA--*/
+    #portada-contacto{
+        img{
+            @include img-size(100vh,110vw);
+        }
+        h1{
+            @include portada(absolute,45%,35%,215%, 600,translate(-50%,-50%));    
+        }
+    }
+
+    /*--MAIN--*/
+    #contacto-form{
+        padding: 10%;
+        #container-form-button{
+            padding-left: 34%;    
+        } 
     }
 }

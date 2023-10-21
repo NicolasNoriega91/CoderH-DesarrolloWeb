@@ -6,7 +6,7 @@
         @include img-size(100%,650px);
     }
     h1{
-        @include portada(absolute, 50%, 18%, 400%, translate(-50%,-50%));
+        @include portada(absolute, 50%, 18%, 400%, 600, translate(-50%,-50%));
         @include desvanecer(ease-in,1.8s);
     }
 }
@@ -27,7 +27,6 @@
     }
     img{
         @include img-size(75%,50%);
-        border-radius: 10px;
         align-self: center;
         padding: 5%;
     }
@@ -45,3 +44,34 @@
     padding-left: 12%;
 }
 
+/*-- MOVILE L | 425px --*/ 
+@media only screen and (max-width: 425px){
+    /*--PORTADA--*/
+    #portada-dolarmep{
+        img{
+            @include img-size(100vh,110vw);
+        }
+        h1{
+            @include portada(absolute,45%,35%,215%, 600,translate(-50%,-50%));
+        }
+    }
+
+    /*--MAIN--*/
+    #main-dolarmep{
+        h2{
+            @include title-size(100%,650); 
+        }
+        p{
+            font-size: 80%;
+        }
+        img{
+            @include img-size(50vh,60vw);
+            padding: 7%;           
+        }
+    }
+    #main-dolarmep-contacto{
+
+        @include title-size(120%,650);
+    }
+
+}

@@ -6,7 +6,7 @@
         @include img-size(100%,690px);
     }
     h1{
-        @include portada(absolute,50%,25%,400%,translate(-50%,-50%));
+        @include portada(absolute,50%,25%,400%, 600, translate(-50%,-50%));
         @include desvanecer(ease-in,2s);
     }
 }
@@ -55,3 +55,42 @@
 
 }
 
+/*-- MOVILE L | 425px --*/ 
+@media only screen and (max-width: 425px){
+    /*--PORTADA--*/
+    #portada-mercado{
+        img{
+            @include img-size(100vh,110vw);
+        }
+        h1{
+            @include portada(absolute,45%,45%,185%, 600, translate(-50%,-50%));
+        }
+    }
+
+    /*--MAIN--*/
+    #cedears{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 7%;
+        div{
+            width: 75%;
+        }
+        section{
+            iframe{
+                @include img-size(360px,215px);
+            }
+        }
+    }
+    #bonos{
+        @extend #cedears;
+        flex-direction: column-reverse;
+    }
+    #acciones{
+        @extend #cedears;
+    }
+    #main-mercado-contacto{
+        @include title-size(148%,650);
+    }
+
+}

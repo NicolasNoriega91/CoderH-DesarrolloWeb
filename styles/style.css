@@ -86,6 +86,17 @@ footer p {
   padding: 15px;
 }
 
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  #footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  #footer-container div p {
+    text-align: center;
+  }
+}
 /*--PAGES--*/
 /*--PORTADA--*/
 #portada-contacto {
@@ -100,6 +111,7 @@ footer p {
   top: 50%;
   left: 18%;
   font-size: 400%;
+  font-weight: 600;
   transform: translate(-50%, -50%);
   animation-name: desvanecer;
   animation-timing-function: ease-in;
@@ -121,6 +133,29 @@ footer p {
   padding-left: 45%;
 }
 
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  /*--PORTADA--*/
+  #portada-contacto img {
+    width: 100vh;
+    height: 110vw;
+  }
+  #portada-contacto h1 {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 215%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
+  #contacto-form {
+    padding: 10%;
+  }
+  #contacto-form #container-form-button {
+    padding-left: 34%;
+  }
+}
 /*--PORTADA--*/
 #portada-dolarmep {
   color: white;
@@ -134,6 +169,7 @@ footer p {
   top: 50%;
   left: 18%;
   font-size: 400%;
+  font-weight: 600;
   transform: translate(-50%, -50%);
   animation-name: desvanecer;
   animation-timing-function: ease-in;
@@ -160,7 +196,6 @@ footer p {
 #main-dolarmep img {
   width: 75%;
   height: 50%;
-  border-radius: 10px;
   align-self: center;
   padding: 5%;
 }
@@ -180,6 +215,39 @@ footer p {
   padding-left: 12%;
 }
 
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  /*--PORTADA--*/
+  #portada-dolarmep img {
+    width: 100vh;
+    height: 110vw;
+  }
+  #portada-dolarmep h1 {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 215%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
+  #main-dolarmep h2 {
+    font-size: 100%;
+    font-weight: 650;
+  }
+  #main-dolarmep p {
+    font-size: 80%;
+  }
+  #main-dolarmep img {
+    width: 50vh;
+    height: 60vw;
+    padding: 7%;
+  }
+  #main-dolarmep-contacto {
+    font-size: 120%;
+    font-weight: 650;
+  }
+}
 /*--PORTADA--*/
 #portada-fondos {
   color: white;
@@ -193,6 +261,7 @@ footer p {
   top: 50%;
   left: 30%;
   font-size: 400%;
+  font-weight: 600;
   transform: translate(-50%, -50%);
   animation-name: desvanecer;
   animation-timing-function: ease-in;
@@ -242,6 +311,41 @@ footer p {
   font-weight: 700;
 }
 
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  /*--PORTADA--*/
+  #portada-fondos img {
+    width: 100vh;
+    height: 110vw;
+  }
+  #portada-fondos h1 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 185%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
+  #main-section-2 {
+    flex-flow: column wrap;
+    text-align: center;
+  }
+  #main-section-2 div {
+    padding: 5%;
+  }
+  #section-carrousel section {
+    flex-flow: column wrap;
+    padding: 5%;
+  }
+  #section-carrousel section img {
+    max-width: 250px;
+  }
+  #section-carrousel section section h5 {
+    font-size: 125%;
+    font-weight: 700;
+  }
+}
 /*--PORTADA--*/
 #portada-mercado {
   color: white;
@@ -255,6 +359,7 @@ footer p {
   top: 50%;
   left: 25%;
   font-size: 400%;
+  font-weight: 600;
   transform: translate(-50%, -50%);
   animation-name: desvanecer;
   animation-timing-function: ease-in;
@@ -306,6 +411,43 @@ footer p {
   padding: 7%;
 }
 
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  /*--PORTADA--*/
+  #portada-mercado img {
+    width: 100vh;
+    height: 110vw;
+  }
+  #portada-mercado h1 {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    font-size: 185%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
+  #cedears, #bonos, #acciones {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+  }
+  #cedears div, #bonos div, #acciones div {
+    width: 75%;
+  }
+  #cedears section iframe, #bonos section iframe, #acciones section iframe {
+    width: 360px;
+    height: 215px;
+  }
+  #bonos {
+    flex-direction: column-reverse;
+  }
+  #main-mercado-contacto {
+    font-size: 148%;
+    font-weight: 650;
+  }
+}
 /*---PORTADA---*/
 #portada {
   color: white;
@@ -319,6 +461,7 @@ footer p {
   top: 35%;
   left: 50%;
   font-size: 400%;
+  font-weight: 600;
   transform: translate(-50%, -50%);
   animation-name: cambio_color;
   animation-iteration-count: initial;
@@ -330,6 +473,7 @@ footer p {
   top: 52%;
   left: 52.5%;
   font-size: 190%;
+  font-weight: 500;
   transform: translate(-55%, -55%);
   animation-name: cambio_color;
   animation-iteration-count: initial;
@@ -355,6 +499,30 @@ main #main-container div img:hover {
   animation-name: desvanecer;
   animation-timing-function: ease-in;
   animation-duration: 1.5s;
+}
+
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  #portada img {
+    width: 100vh;
+    height: 125vw;
+  }
+  #portada h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    font-size: 210%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  #portada p {
+    position: absolute;
+    top: 55%;
+    left: 52.5%;
+    font-size: 120%;
+    font-weight: 500;
+    transform: translate(-55%, -55%);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

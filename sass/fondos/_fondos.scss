@@ -6,7 +6,7 @@
         @include img-size(100%,650px);
     }
     h1{
-        @include portada(absolute,50%,30%,400%,translate(-50%,-50%));
+        @include portada(absolute,50%,30%,400%, 600,translate(-50%,-50%));
         @include desvanecer(ease-in,2s);
     }
 }
@@ -48,6 +48,43 @@
             h5{
                 @include title-size(150%,700);
             }
+        }
+    }
+}
+
+/*-- MOVILE L | 425px --*/ 
+@media only screen and (max-width: 425px){
+    /*--PORTADA--*/
+    #portada-fondos{
+        img{
+            @include img-size(100vh,110vw);
+        }
+        h1{
+            @include portada(absolute,45%,45%,185%, 600,translate(-50%,-50%));
+        }
+    }
+
+    /*--MAIN--*/
+    #main-section-2{
+        flex-flow: column wrap;
+        text-align: center;
+        div{
+            padding: 5%;
+        }
+    }
+    #section-carrousel{
+        section{
+            flex-flow: column wrap;
+            padding: 5%;
+            img{
+                max-width: 250px;
+            }
+            section{
+                h5{
+                    @include title-size(125%,700);
+                }
+            }
+
         }
     }
 }
