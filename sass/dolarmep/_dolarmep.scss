@@ -44,18 +44,17 @@
     padding-left: 12%;
 }
 
-/*-- MOVILE L | 425px --*/ 
-@media only screen and (max-width: 425px){
+/*-- TABLET | 768px --*/
+@media only screen and (max-width: 768px){
     /*--PORTADA--*/
     #portada-dolarmep{
         img{
-            @include img-size(100vh,110vw);
+            @include img-size(120vh,90vw);
         }
         h1{
-            @include portada(absolute,45%,35%,215%, 600,translate(-50%,-50%));
+           @include portada(absolute,45%, 25%, 315%, 600,translate(-50%,-50%));
         }
     }
-
     /*--MAIN--*/
     #main-dolarmep{
         h2{
@@ -65,13 +64,30 @@
             font-size: 80%;
         }
         img{
-            @include img-size(50vh,60vw);
+            @include img-size(80vh,60vw);
             padding: 7%;           
         }
     }
     #main-dolarmep-contacto{
-
         @include title-size(120%,650);
     }
+}
 
+/*-- MOVILE L | 425px --*/ 
+@media only screen and (max-width: 425px){
+    /*--PORTADA--*/
+    #portada-dolarmep{
+        img{
+            @include img-size(100vh,125vw);
+        }
+        h1{
+            @include portada(absolute,35%,35%,215%, 600,translate(-50%,-50%));
+        }
+    }
+    /*--MAIN--*/
+    #main-dolarmep{
+        img{
+            @include img-size(50vh,60vw);        
+        }
+    }
 }

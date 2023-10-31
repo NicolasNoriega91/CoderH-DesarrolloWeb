@@ -28,24 +28,42 @@
     }
 }
 
+/*-- TABLET | 768px --*/
+@media only screen and (max-width: 768px){
+    /*--PORTADA--*/
+    #portada-contacto{
+        img{
+            @include img-size(120vh,90vw);
+        }
+        h1{
+            @include portada(absolute,45%, 25%, 315%, 600,translate(-50%,-50%));
+        }
+    }
+    /*--MAIN--*/
+    #contacto-form{
+        #container-form-button {
+            padding-left: 41%;    
+        } 
+    }
+}
+
 /*-- MOVILE L | 425px --*/ 
 @media only screen and (max-width: 425px){
 
     /*--PORTADA--*/
     #portada-contacto{
         img{
-            @include img-size(100vh,110vw);
+            @include img-size(100vh,125vw);
         }
         h1{
-            @include portada(absolute,45%,35%,215%, 600,translate(-50%,-50%));    
+            @include portada(absolute,35%,35%,215%, 600,translate(-50%,-50%));    
         }
     }
-
     /*--MAIN--*/
     #contacto-form{
         padding: 10%;
         #container-form-button{
-            padding-left: 34%;    
+            padding-left: 35%;    
         } 
     }
 }

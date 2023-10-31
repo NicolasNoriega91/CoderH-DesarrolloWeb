@@ -86,8 +86,8 @@ footer p {
   padding: 15px;
 }
 
-/*-- MOVILE L | 425px --*/
-@media only screen and (max-width: 425px) {
+/*-- TABLET | 768px -- */
+@media only screen and (max-width: 768px) {
   #footer-container {
     flex-direction: column;
     align-items: center;
@@ -133,16 +133,36 @@ footer p {
   padding-left: 45%;
 }
 
+/*-- TABLET | 768px --*/
+@media only screen and (max-width: 768px) {
+  /*--PORTADA--*/
+  #portada-contacto img {
+    width: 120vh;
+    height: 90vw;
+  }
+  #portada-contacto h1 {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    font-size: 315%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
+  #contacto-form #container-form-button {
+    padding-left: 41%;
+  }
+}
 /*-- MOVILE L | 425px --*/
 @media only screen and (max-width: 425px) {
   /*--PORTADA--*/
   #portada-contacto img {
     width: 100vh;
-    height: 110vw;
+    height: 125vw;
   }
   #portada-contacto h1 {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 35%;
     font-size: 215%;
     font-weight: 600;
@@ -153,7 +173,7 @@ footer p {
     padding: 10%;
   }
   #contacto-form #container-form-button {
-    padding-left: 34%;
+    padding-left: 35%;
   }
 }
 /*--PORTADA--*/
@@ -215,18 +235,18 @@ footer p {
   padding-left: 12%;
 }
 
-/*-- MOVILE L | 425px --*/
-@media only screen and (max-width: 425px) {
+/*-- TABLET | 768px --*/
+@media only screen and (max-width: 768px) {
   /*--PORTADA--*/
   #portada-dolarmep img {
-    width: 100vh;
-    height: 110vw;
+    width: 120vh;
+    height: 90vw;
   }
   #portada-dolarmep h1 {
     position: absolute;
     top: 45%;
-    left: 35%;
-    font-size: 215%;
+    left: 25%;
+    font-size: 315%;
     font-weight: 600;
     transform: translate(-50%, -50%);
   }
@@ -239,13 +259,34 @@ footer p {
     font-size: 80%;
   }
   #main-dolarmep img {
-    width: 50vh;
+    width: 80vh;
     height: 60vw;
     padding: 7%;
   }
   #main-dolarmep-contacto {
     font-size: 120%;
     font-weight: 650;
+  }
+}
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  /*--PORTADA--*/
+  #portada-dolarmep img {
+    width: 100vh;
+    height: 125vw;
+  }
+  #portada-dolarmep h1 {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    font-size: 215%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
+  #main-dolarmep img {
+    width: 50vh;
+    height: 60vw;
   }
 }
 /*--PORTADA--*/
@@ -311,18 +352,18 @@ footer p {
   font-weight: 700;
 }
 
-/*-- MOVILE L | 425px --*/
-@media only screen and (max-width: 425px) {
+/*--TABLET | 768px --*/
+@media only screen and (max-width: 768px) {
   /*--PORTADA--*/
   #portada-fondos img {
     width: 100vh;
-    height: 110vw;
+    height: 90vw;
   }
   #portada-fondos h1 {
     position: absolute;
     top: 45%;
-    left: 45%;
-    font-size: 185%;
+    left: 40%;
+    font-size: 245%;
     font-weight: 600;
     transform: translate(-50%, -50%);
   }
@@ -334,10 +375,41 @@ footer p {
   #main-section-2 div {
     padding: 5%;
   }
+  #main-section-2 div img {
+    width: 35vh;
+    height: 35vw;
+  }
   #section-carrousel section {
     flex-flow: column wrap;
     padding: 5%;
   }
+  #section-carrousel section img {
+    max-width: 450px;
+  }
+  #section-carrousel section section h5 {
+    font-size: 125%;
+    font-weight: 700;
+  }
+  #section-carrousel section section p {
+    font-size: 85%;
+  }
+}
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  /*--PORTADA--*/
+  #portada-fondos img {
+    width: 100vh;
+    height: 125vw;
+  }
+  #portada-fondos h1 {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    font-size: 185%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
   #section-carrousel section img {
     max-width: 250px;
   }
@@ -411,18 +483,18 @@ footer p {
   padding: 7%;
 }
 
-/*-- MOVILE L | 425px --*/
-@media only screen and (max-width: 425px) {
+/*-- TABLET | 768px --*/
+@media only screen and (max-width: 768px) {
   /*--PORTADA--*/
   #portada-mercado img {
     width: 100vh;
-    height: 110vw;
+    height: 90vw;
   }
   #portada-mercado h1 {
     position: absolute;
     top: 45%;
-    left: 45%;
-    font-size: 185%;
+    left: 32%;
+    font-size: 245%;
     font-weight: 600;
     transform: translate(-50%, -50%);
   }
@@ -443,6 +515,23 @@ footer p {
   #bonos {
     flex-direction: column-reverse;
   }
+}
+/*-- MOVILE L | 425px --*/
+@media only screen and (max-width: 425px) {
+  /*--PORTADA--*/
+  #portada-mercado img {
+    width: 100vh;
+    height: 125vw;
+  }
+  #portada-mercado h1 {
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    font-size: 185%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+  }
+  /*--MAIN--*/
   #main-mercado-contacto {
     font-size: 148%;
     font-weight: 650;
@@ -501,6 +590,29 @@ main #main-container div img:hover {
   animation-duration: 1.5s;
 }
 
+/*-- TABLET | 768px -- */
+@media only screen and (max-width: 768px) {
+  #portada img {
+    width: 120vh;
+    height: 90vw;
+  }
+  #portada h1 {
+    position: absolute;
+    top: 40%;
+    left: 54%;
+    font-size: 310%;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+  }
+  #portada p {
+    position: absolute;
+    top: 65%;
+    left: 52.5%;
+    font-size: 140%;
+    font-weight: 500;
+    transform: translate(-55%, -55%);
+  }
+}
 /*-- MOVILE L | 425px --*/
 @media only screen and (max-width: 425px) {
   #portada img {
@@ -517,7 +629,7 @@ main #main-container div img:hover {
   }
   #portada p {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 52.5%;
     font-size: 120%;
     font-weight: 500;

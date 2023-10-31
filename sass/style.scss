@@ -50,6 +50,23 @@ main{
     }
 }
 
+/*-- TABLET | 768px -- */
+
+@media only screen and (max-width: 768px){
+    #portada{
+        img{
+            @include img-size(120vh,90vw);
+        }
+        h1{
+            @include portada(absolute, 40%, 54%, 310%, 700, translate(-50%,-50%));
+        }
+        p{
+            @include portada(absolute, 65%, 52.5%, 140%, 500, translate(-55%,-55%));
+        }
+    }
+}
+
+
 /*-- MOVILE L | 425px --*/ 
 @media only screen and (max-width: 425px){
     #portada{
@@ -60,7 +77,7 @@ main{
             @include portada(absolute, 25%, 50%, 210%, 600, translate(-50%,-50%));
         }
         p{
-            @include portada(absolute, 55%, 52.5%, 120%, 500, translate(-55%,-55%));
+            @include portada(absolute, 50%, 52.5%, 120%, 500, translate(-55%,-55%));
         }
     }
 }
